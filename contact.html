@@ -8,22 +8,99 @@
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <img src="svg/logo.svg" alt="Eco-Life" />
+        </div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="calculator.html">Calculator</a></li>
           <li><a href="goals.html">Goal</a></li>
         </ul>
-
-        <div>
-          <a href="contact.html">Get in Touch</a>
+        <div class="contact-btn">
+          <a href="contact.html">Get in Touch <img src="svg/arrow.svg" alt="arrow" /></a>
         </div>
       </nav>
+      <div class="title-container">
+        <h1>Carbon Footprint Calculator</h1>
+      </div>
     </header>
-
-    <section></section>
-
+    <main>
+      <section class="contact-section">
+        <form>
+          <div class="form-img">
+            <img
+              src="images/contact-form-img.jpg"
+              alt="contact form"
+              style="width: 583px; height: 788px" />
+          </div>
+          <div class="form-container">
+            <div class="subheading">
+              <img src="svg/leaf.svg" alt="leaf" />
+              <h5>Get to Contact Us</h5>
+            </div>
+            <h2>Got Any Questions? Tell us!</h2>
+            <div class="inputs">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" placeholder="Name" />
+              <label for="phone-number"></label>
+              <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" />
+              <label for="email-address"></label>
+              <input
+                type="email"
+                name="email-address"
+                id="email-address"
+                placeholder="Email Address" />
+              <label for="subject"></label>
+              <input type="text" name="subject" id="subject" placeholder="Subject" />
+              <label for="message"></label>
+              <textarea id="message" maxlength="250"></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="contact-info">
+          <div class="email-info">
+            <div class="email-title">
+              <img src="svg/email.svg" alt="email" />
+              <h4>Mail us 24/7</h4>
+            </div>
+            <div class="email-text">
+              <p>ecolifesupport@eco.com</p>
+            </div>
+          </div>
+          <div class="phone-info">
+            <div class="phone-title">
+              <img src="svg/phone.svg" alt="phone" />
+              <h4>Call us 24/7</h4>
+            </div>
+            <div class="phone-text">
+              <p>Phone: 123-456-789</p>
+            </div>
+          </div>
+          <div class="location-info">
+            <div class="location-title">
+              <img src="svg/location.svg" alt="location" />
+              <h4>Our Location</h4>
+            </div>
+            <div class="location-text">
+              <p>1 University Blvd, Markham, Canada, ON L6G 0A1</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309334.34702823486!2d-79.5004697966243!3d43.91949342946277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d53d28a8b727%3A0xfd7024bab5e7bbfe!2sYork%20University%20Markham%20Campus!5e0!3m2!1sen!2sca!4v1738187058061!5m2!1sen!2sca"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
     <footer>
       <div class="support-container">
         <div class="support-text">
@@ -77,8 +154,10 @@
             <div>
               <h4>Our Address</h4>
               <ul>
-                <li>1 University Blvd, Markham,</li>
-                <li>Canada, ON L6G 0A1</li>
+                <li>
+                  1 University Blvd, Markham, <br />
+                  Canada, ON L6G 0A1
+                </li>
               </ul>
             </div>
           </div>
