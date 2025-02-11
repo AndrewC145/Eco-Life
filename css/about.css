@@ -149,3 +149,39 @@ nav .contact-btn {
   font-weight: 300;
   line-height: 40px;
 }
+
+footer .support-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--tertiary-color);
+}
+
+.support-container .support-text h2 {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.support-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-container img,
+.email-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.phone-container,
+.email-container {
+  display: flex;
+  padding: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: var(--background-color);
+}
