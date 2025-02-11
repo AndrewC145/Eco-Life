@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #fff;
+  --primary-text: #000;
+  --background-color: #f8f7f0;
+  --secondary-text: #404a3d;
+  --tertiary-color: #eddd5e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  background: url('../images/about-us-banner.jpg') lightgray 50% / cover
+    no-repeat;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.2rem;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li img {
+  margin-right: 0.5rem;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav .contact-btn {
+  margin-left: auto;
+}
+
+.contact-btn {
+  display: flex;
+  width: 180px;
+  height: 60px;
+  padding: 18px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 2.664px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--tertiary-color);
+}
