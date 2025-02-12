@@ -185,3 +185,72 @@ footer .support-container {
   border-radius: 25px;
   background: var(--background-color);
 }
+
+.footer-main {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  height: 400px;
+}
+
+.footer-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 10rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 17%;
+  color: #404a3d;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.footer-left p,
+.footer-left .social-media {
+  margin-left: 1rem;
+}
+
+.social-media {
+  display: inline-flex;
+  gap: 1rem;
+  width: auto;
+  max-width: 100%;
+}
+
+.social-media img {
+  background-color: var(--background-color);
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+
+.footer-right h4 {
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-right li {
+  font-weight: 300;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.footer-right li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
