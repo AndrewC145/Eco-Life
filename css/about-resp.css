@@ -128,10 +128,6 @@
     overflow: visible;
   }
 
-  .logo img {
-    width: 7rem;
-  }
-
   nav ul,
   .contact-btn {
     display: none;
@@ -157,6 +153,12 @@
     padding: 0.8rem 1.3rem;
   }
 
+  .started-container,
+  .mission-container,
+  .visit-container {
+    gap: 2rem;
+  }
+
   .who-img,
   .mission-img,
   .visit-img {
@@ -174,11 +176,15 @@
   .mission-text-container,
   .visit-text-container {
     font-size: 0.9rem;
-    width: 400px;
+    width: 350px;
   }
 
   .support-container .support-text h2 {
     font-size: 1rem;
+  }
+
+  .support-container p {
+    font-size: 0.8rem;
   }
 
   .phone-container img,
@@ -188,16 +194,19 @@
   }
 
   .footer-main {
-    height: 350px;
+    height: 300px;
   }
 
   .footer-info-container {
     padding: 0;
     padding-top: 2rem;
+    gap: 5rem;
   }
 
   .footer-left {
-    width: 30%;
+    width: 40%;
+    font-size: 0.8rem;
+    gap: 1rem;
   }
 
   .footer-logo {
