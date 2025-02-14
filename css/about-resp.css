@@ -137,8 +137,9 @@
     display: block;
   }
 
-  .menu-links {
+  .menu-btn .menu-links {
     overflow-y: visible;
+    gap: 0.7rem;
   }
 
   .menu-btn a {
