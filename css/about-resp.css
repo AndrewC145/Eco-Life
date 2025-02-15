@@ -231,3 +231,66 @@
     font-size: 0.7rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 150px;
+  }
+
+  .menu-btn {
+    margin: 0;
+  }
+
+  .menu-btn .menu-links {
+    gap: 0.5rem;
+  }
+
+  .started-container,
+  .mission-container,
+  .visit-container {
+    flex-direction: column;
+    gap: 0;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .who-text-container,
+  .mission-text-container,
+  .visit-text-container {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .mission-img {
+    order: -1;
+  }
+
+  footer .support-container {
+    flex-direction: column;
+  }
+
+  .support-container .support-text {
+    text-wrap: nowrap;
+    padding-bottom: 1rem;
+  }
+
+  .phone-container,
+  .email-container {
+    padding: 0.5rem;
+  }
+
+  .footer-info-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer-left {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .footer-right {
+    order: -1;
+  }
+}

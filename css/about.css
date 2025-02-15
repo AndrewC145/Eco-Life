@@ -89,6 +89,7 @@ nav .contact-btn {
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
+  position: relative;
 }
 
 .menu-btn label {
@@ -108,7 +109,8 @@ nav .contact-btn {
   align-items: center;
   background-color: var(--tertiary-color);
   padding: 0.8em;
-  position: fixed;
+  position: absolute;
+  right: -2rem;
 }
 
 .menu-links a {
