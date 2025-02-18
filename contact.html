@@ -4,27 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <img src="svg/logo.svg" alt="Eco-Life" />
+          <img src="svg/header-logo.svg" alt="Eco-Life" />
         </div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="education.html">Resources</a></li>
-          <li><a href="calculator.html">Calculator</a></li>
-          <li><a href="goals.html">Goals</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /> <a href="about.html">About</a>
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="dashboard.html"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="education.html"
+              >Resources</a
+            >
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="calculator.html"
+              >Calculator</a
+            >
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="goals.html">Goals</a>
+          </li>
         </ul>
         <div class="contact-btn">
           <a href="contact.html"
             >Get in Touch <img src="svg/arrow.svg" alt="arrow"
           /></a>
+        </div>
+        <div class="menu-btn">
+          <input type="checkbox" id="menu" />
+          <label for="menu" class="open-menu">
+            <img
+              src="svg/hamburger-menu-svgrepo-com.svg"
+              alt="menu"
+              style="height: 30px; width: 30px" />
+          </label>
+          <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="education.html">Resources</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="goals.html">Goals</a>
+            <a href="contact.html">Contact</a>
+          </div>
         </div>
       </nav>
       <div class="title-container">
@@ -35,17 +76,14 @@
       <section class="contact-section">
         <form>
           <div class="form-img">
-            <img
-              src="images/contact-form-img.jpg"
-              alt="contact form"
-              style="width: 583px; height: 788px" />
+            <img src="images/contact-form-img.jpg" alt="contact form" />
           </div>
           <div class="form-container">
             <div class="subheading">
               <img src="svg/leaf.svg" alt="leaf" />
-              <h5>Get to Contact Us</h5>
+              <h2>Get to Contact Us</h2>
             </div>
-            <h2>Got Any Questions? Tell us!</h2>
+            <h3>Got Any Questions? Tell us!</h3>
             <div class="inputs">
               <label for="name"></label>
               <input type="text" id="name" name="name" placeholder="Name" />
