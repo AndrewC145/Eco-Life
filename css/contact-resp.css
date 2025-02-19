@@ -122,3 +122,203 @@
     font-size: 0.8rem;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 200px;
+    overflow: visible;
+  }
+
+  nav ul,
+  .contact-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn .menu-links {
+    overflow-y: visible;
+    gap: 0.7rem;
+  }
+
+  .menu-btn a {
+    font-size: 0.8rem;
+  }
+
+  .title-container h1 {
+    font-size: 2rem;
+  }
+
+  .contact-btn {
+    padding: 0.8rem 1.3rem;
+  }
+
+  form {
+    width: 90%;
+    padding: 2rem 1rem;
+    height: 100%;
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  .subheading h2 {
+    font-size: 0.7rem;
+  }
+
+  .form-container h3 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .form-container .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+  .email-title,
+  .phone-title,
+  .location-title {
+    font-size: 0.9rem;
+  }
+
+  .email-title img,
+  .phone-title img,
+  .location-title img {
+    height: 20px;
+    width: 20px;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+
+  .email-text,
+  .phone-text,
+  .location-text {
+    font-size: 0.8rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  .support-container .support-text h2 {
+    font-size: 1rem;
+  }
+
+  .support-container p {
+    font-size: 0.8rem;
+  }
+
+  .phone-container img,
+  .email-container img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .footer-main {
+    height: 300px;
+  }
+
+  .footer-info-container {
+    padding: 0;
+    padding-top: 2rem;
+    gap: 5rem;
+  }
+
+  .footer-left {
+    width: 40%;
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    margin-left: 0.5rem;
+  }
+
+  .footer-logo {
+    width: 8rem;
+  }
+
+  .footer-logo img {
+    width: 100%;
+  }
+
+  .footer-right {
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+
+  .footer-right li {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 150px;
+  }
+
+  .menu-btn {
+    margin: 0;
+  }
+
+  .menu-btn .menu-links {
+    gap: 0.5rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .email-info,
+  .phone-info,
+  .location-info {
+    width: 100%;
+    align-items: center;
+  }
+
+  iframe {
+    height: 200px;
+  }
+
+  footer .support-container {
+    flex-direction: column;
+  }
+
+  .support-container .support-text {
+    text-wrap: nowrap;
+    padding-bottom: 1rem;
+  }
+
+  .phone-container,
+  .email-container {
+    padding: 0.5rem;
+  }
+
+  .footer-info-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer-left {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .footer-right {
+    order: -1;
+  }
+}
