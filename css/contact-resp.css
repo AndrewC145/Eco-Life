@@ -4,15 +4,121 @@
   }
 
   form {
-    width: 70%;
+    height: 600px;
+  }
+
+  .form-container {
+    padding: 1.5rem;
   }
 
   .form-container h3 {
     font-size: 2.5rem;
   }
 
+  .inputs input,
+  .inputs textarea {
+    padding: 0.7rem;
+  }
+
+  #message {
+    height: 5rem;
+  }
+
+  .form-button {
+    width: 70%;
+  }
+
+  iframe {
+    height: 350px;
+  }
+
   .footer-info-container {
     padding: 0;
     padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 250px;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  .title-container {
+    top: 50%;
+  }
+
+  .title-container h1 {
+    font-size: 2.5rem;
+  }
+
+  form {
+    height: 550px;
+  }
+
+  .form-container h3 {
+    font-size: 2rem;
+  }
+
+  .form-button {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .email-info,
+  .phone-info,
+  .location-info {
+    width: 300px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  .support-container .support-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .phone-container img,
+  .email-container img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .footer-main {
+    height: 400px;
+  }
+
+  .footer-info-container {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .footer-left {
+    width: 25%;
+  }
+
+  .footer-logo {
+    margin-left: 0.5rem;
+  }
+
+  .footer-logo {
+    width: 9rem;
+  }
+
+  .footer-logo img {
+    width: 100%;
+  }
+
+  .footer-right {
+    margin-top: 1rem;
+    gap: 3rem;
+  }
+
+  .footer-right li {
+    font-size: 0.8rem;
   }
 }

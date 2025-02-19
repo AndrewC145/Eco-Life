@@ -6,11 +6,20 @@ form {
   justify-content: center;
   width: 80%;
   padding: 3rem;
+  align-items: stretch;
+  height: 700px;
+}
+
+.form-img {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .form-img img {
   width: 100%;
-  height: 600px;
+  height: 100%;
+  object-fit: cover;
   border-radius: 30px 0px 0px 30px;
 }
 
@@ -48,7 +57,7 @@ form {
 
 .form-container .inputs {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
@@ -58,30 +67,15 @@ form {
   padding: 1rem;
   border: 1px solid rgba(64, 74, 61, 0.2);
   border-radius: 10px;
+  width: 100%;
 }
 
-.inputs label {
-  width: 0;
-}
-
-#name {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-#phone-number {
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-#email-address {
-  grid-area: 2 / 1 / 2 / 2;
-}
-
-#subject {
-  grid-area: 2 / 2 / 2 / 3;
+label[for='message'] {
+  grid-column: 1 / 3;
 }
 
 #message {
-  grid-area: 3 / 1 / 4 / 3;
+  resize: none;
   height: 7rem;
 }
 
@@ -118,6 +112,7 @@ form {
   padding: 1.5rem;
   width: 350px;
   height: 100%;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
