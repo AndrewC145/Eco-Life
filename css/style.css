@@ -1,0 +1,102 @@
+@import url(common.css);
+
+header{
+    background-image: url(../images/hero-image.jpg);
+}
+
+.title-container{
+    position:relative;
+    top:10%;
+    left:0%;
+    text-align: center;
+}
+
+.title-container h1{
+    font-weight: 1000;
+    font-size:5rem;
+}
+
+.title-container h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.white{
+    background-color: white;
+    color: black;
+}
+
+.about-btn{
+    border:none;
+    margin-left:47%;
+}
+
+
+
+.content-box{
+    display: grid;
+    background-color: white;
+    border-radius: 30px;
+    margin: 5% 5%;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+}
+
+.content-left{
+    border-radius: 30px;
+}
+
+.content-left img{
+    object-fit: cover;
+    border-radius: 30px;
+    height: 70%;
+    max-width: 90%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.content-right{
+    margin:10% 5%;
+}
+
+.content-right img{
+    border-radius: 30px;
+    width: 90%;
+    max-height: 40%;
+    object-fit: cover;
+}
+
+.content-text{
+    padding: 5%;
+}
+
+.content-text h3{
+    color:rgb(47, 47, 47);
+    margin-bottom: 20px;    
+}
+
+.content-lists ul{
+    list-style-image: url(../svg/checkmark.svg);
+}
+
+#rotate{
+    display: flex;
+    gap:50px;
+}
+
+.rotate-container span{
+    color: var(--background-color);
+    text-shadow: 1px 1px 0px rgba(64, 74, 61, 0.50), -1px -1px 0px rgba(64, 74, 61, 0.50), 1px -1px 0px rgba(64, 74, 61, 0.50), -1px 1px 0px rgba(64, 74, 61, 0.50), 1px 1px 0px rgba(64, 74, 61, 0.50);
+    font-family: Signika;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem; /* 120% */
+
+}
+
+.habits-container{
+    background-color: var(--green-color);
+    color:white;
+}

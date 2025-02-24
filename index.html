@@ -6,46 +6,85 @@
     <title>Eco-Life</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <main>
       <header>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Resources</a></li>
-            <li><a href="calculator.html">Calculator</a></li>
-            <li><a href="goals.html">Goals</a></li>
-          </ul>
-          <div class="logo-container">
-            <img src="svg/logo.svg" alt="Eco Life" />
+          <div class="logo">
+            <img src="svg/header-logo.svg" alt="Eco-Life" />
           </div>
-          <div>
-            <a href="contact.html">Get in Touch</a>
-            <img src="svg/arrow.svg" alt="arrow" />
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <img src="svg/nav-bullet.svg" /> <a href="about.html">About</a>
+            </li>
+            <li>
+              <img src="svg/nav-bullet.svg" /><a href="dashboard.html"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <img src="svg/nav-bullet.svg" /><a href="education.html"
+                >Resources</a
+              >
+            </li>
+            <li>
+              <img src="svg/nav-bullet.svg" /><a href="calculator.html"
+                >Calculator</a
+              >
+            </li>
+            <li>
+              <img src="svg/nav-bullet.svg" /><a href="goals.html">Goals</a>
+            </li>
+          </ul>
+          <div class="contact-btn">
+            <a href="contact.html"
+              >Get in Touch <img src="svg/arrow.svg" alt="arrow"
+            /></a>
+          </div>
+          <div class="menu-btn">
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="open-menu">
+              <img
+                src="svg/hamburger-menu-svgrepo-com.svg"
+                alt="menu"
+                style="height: 30px; width: 30px" />
+            </label>
+            <div class="menu-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="dashboard.html">Dashboard</a>
+              <a href="education.html">Resources</a>
+              <a href="calculator.html">Calculator</a>
+              <a href="goals.html">Goals</a>
+              <a href="contact.html">Contact</a>
+            </div>
           </div>
         </nav>
-        <div class="hero-image">
-          <img src="images/hero-image.jpg" alt="holding-plant" height="500" />
-          <div class="hero-content">
-            <p>To support the Earth</p>
-            <h1>Start</h1>
-            <h2>A better Tomorrow</h2>
-            <button>About us</button>
-          </div>
+        <div class="title-container">
+          <h1>Start</h1>
+          <h2>A Better Tommorow</h2>
+          <button class="contact-btn white about-btn">About us</button>
         </div>
       </header>
-      <section class="section-beige">
-        <div class="content-box lg center">
+      <section id="dashboard">
+        <div class="content-box">
           <div class="content-left">
             <img
               src="images/motivation.jpg"
               alt="man standing on mountain"
-              height="400" />
+               />
           </div>
           <div class="content-right">
-            <div><img src="images/trees.jpg" alt="trees" height="400" /></div>
+            <img src="images/trees.jpg" alt="trees" />
             <div class="content-text">
               <h3>We want to help you change</h3>
               <p>
@@ -65,26 +104,26 @@
                 </ul>
               </div>
             </div>
-            <button class="btn green">Dashboard</button>
+            <div class="contact-btn"><a href="dashboard.html">Dashboard<img src="./svg/arrow.svg"></a></div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="rotate">
         <div class="rotate-container">
           <img src="svg/slider-vector.svg" />
-          <p>Climate</p>
+          <span>Climate</span>
         </div>
         <div class="rotate-container">
           <img src="svg/slider-vector.svg" />
-          <p>Energy</p>
+          <span>Energy</span>
         </div>
         <div class="rotate-container">
           <img src="svg/slider-vector.svg" />
-          <p>Recycling</p>
+          <span>Recycling</span>
         </div>
         <div class="rotate-container">
           <img src="svg/slider-vector.svg" />
-          <p>Sustainable</p>
+          <span>Sustainable</span>
         </div>
       </section>
       <section>
@@ -92,7 +131,8 @@
           <div class="habits-header">
             <div class="habits-title">
               <img src="svg/leaf.svg" alt="leaf" />
-              <p>Learn More About It</p>
+              <h1>Environmentally<br/>
+                Sustainably Habits</h1>
             </div>
             <div class="habits-text">
               <p>
