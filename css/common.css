@@ -142,6 +142,17 @@ nav .contact-btn {
   font-weight: 500;
 }
 
+.header-cite {
+  position: absolute;
+  bottom: 5%;
+  margin-left: 1rem;
+}
+
+.header-cite a {
+  color: white;
+  text-decoration: none;
+}
+
 footer .support-container {
   display: flex;
   justify-content: space-around;

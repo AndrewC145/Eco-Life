@@ -71,6 +71,12 @@
     width: 450px;
   }
 
+  .who-cite a,
+  .mission-cite a,
+  .visit-cite a {
+    font-size: 0.8rem;
+  }
+
   .support-container .support-text h2 {
     font-size: 1.2rem;
   }
@@ -237,6 +243,10 @@
     height: 150px;
   }
 
+  .header-cite a {
+    font-size: 0.5rem;
+  }
+
   .menu-btn {
     margin: 0;
   }
@@ -250,7 +260,6 @@
   .visit-container {
     flex-direction: column;
     gap: 0;
-    padding: 2rem;
     width: 100%;
   }
 
@@ -278,6 +287,10 @@
   .phone-container,
   .email-container {
     padding: 0.5rem;
+  }
+
+  .footer-main {
+    height: 100%;
   }
 
   .footer-info-container {

@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goals</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
+    <link rel="stylesheet" href="css/goals.css" />
+    
+  
+  <style>
+    input, textarea{
+      background-color: rgba(8, 255, 8, 0.685);
+    }
+
+   
+  </style>
+
   </head>
   <body>
-    <header>
+    <header class="goals-header">
       <nav>
         <div class="logo">
           <img src="svg/logo.svg" alt="Eco-Life" />
         </div>
+        <div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -21,6 +31,7 @@
           <li><a href="calculator.html">Calculator</a></li>
           <li><a href="goals.html">Goals</a></li>
         </ul>
+      </div>
         <div class="contact-btn">
           <a href="contact.html"
             >Get in Touch <img src="svg/arrow.svg" alt="arrow"
@@ -31,46 +42,36 @@
         <h1>Goals</h1>
       </div>
     </header>
-    <section>
+    <section style="background-color: green; height: 700px;">
+
       <div class="goal-tracker">
-        <h2>Sustainability Tracker</h2>
+        <h2 class="main">Sustainability Tracker</h2>
+
+
         <div class="input-container">
-          <input type="text" placeholder="Enter Your Goal: " />
+          <input type="text" placeholder="Enter Your Goal: "/>
           <button><img src="svg/plus.svg" /></button>
         </div>
-        <div class="todo-container">
-          <ul>
-<<<<<<< HEAD
+
+        <div class="todo-container" style="height: 100px;">
+
+
+          <ul class="the-list">
+
             <li><input type="checkbox" />Task 1 <img src="svg/garbage-trash_svgrepo.com.svg" height="30" /></li>
             <li><input type="checkbox" />Task 2 <img src="svg/garbage-trash_svgrepo.com.svg" height ="30" /></li>
             <li><input type="checkbox" />Task 3 <img src="svg/garbage-trash_svgrepo.com.svg" height = "30"/></li>
             <li><input type="checkbox" />Task 4 <img src="svg/garbage-trash_svgrepo.com.svg" height = "30" /></li>
-=======
-            <li>
-              <input type="checkbox" />Task 1
-              <img src="svg/garbage-trash_svgrepo.com.svg" alt="trash" />
-            </li>
-            <li>
-              <input type="checkbox" />Task 2
-              <img src="svg/garbage-trash_svgrepo.com.svg" alt="trash" />
-            </li>
-            <li>
-              <input type="checkbox" />Task 3
-              <img src="svg/garbage-trash_svgrepo.com.svg" alt="trash" />
-            </li>
-            <li>
-              <input type="checkbox" />Task 4
-              <img src="svg/garbage-trash_svgrepo.com.svg" alt="trash" />
-            </li>
->>>>>>> f1ffe02a37cfb2abd387e5e82c39bf4d07da56bf
+
           </ul>
+
         </div>
       </div>
     </section>
     <footer>
       <div class="support-container">
         <div class="support-text">
-          <h2>START SUPPORTING THE EARTH TODAY</h2>
+          <h2><b>START SUPPORTING THE EARTH TODAY</b></h2>
         </div>
         <div class="support-info">
           <div class="phone-container">
