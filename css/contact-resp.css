@@ -60,6 +60,11 @@
     height: 550px;
   }
 
+  .form-container {
+    width: 80%;
+    border-radius: 0.8rem;
+  }
+
   .form-container h3 {
     font-size: 2rem;
   }
@@ -280,6 +285,10 @@
     gap: 0.5rem;
   }
 
+  .header-cite a {
+    font-size: 0.5rem;
+  }
+
   .contact-info {
     flex-direction: column;
   }
@@ -307,6 +316,10 @@
   .phone-container,
   .email-container {
     padding: 0.5rem;
+  }
+
+  .footer-main {
+    height: 100%;
   }
 
   .footer-info-container {

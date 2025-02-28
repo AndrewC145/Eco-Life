@@ -1,5 +1,9 @@
 @import url('common.css');
 
+header {
+  background: url(../images/about-us-banner.jpg) lightgray 50% / cover no-repeat;
+}
+
 .who-img,
 .mission-img,
 .visit-img {
@@ -12,7 +16,7 @@
 .visit-img img {
   border-radius: 10px;
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
 }
 
@@ -49,4 +53,11 @@
   font-style: normal;
   font-weight: 300;
   line-height: 2;
+}
+
+.who-cite a,
+.mission-cite a,
+.visit-cite a {
+  color: #000;
+  text-decoration: none;
 }
