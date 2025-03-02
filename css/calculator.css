@@ -50,7 +50,7 @@ header {
 .calculator {
   display: flex;
   justify-content: center;
-  height: 650px;
+  height: 600px;
 }
 
 .calc-left {
@@ -75,6 +75,87 @@ header {
 
 .calc-right {
   width: 40%;
+  padding: 2rem;
   background: var(--primary-color);
   border-radius: 0px 30px 30px 0px;
+  position: relative;
+}
+
+.subheading {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 30px;
+  background: var(--background-color);
+  gap: 1rem;
+}
+
+.subheading h2 {
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+  text-transform: capitalize;
+}
+
+.calculator-text h3 {
+  width: 80%;
+  color: var(--secondary-text);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+.calculator-text h4 {
+  font-size: 1.2rem;
+  color: var(--secondary-text);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.calc-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calc-quiz .question {
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.calc-quiz .answer {
+  display: flex;
+  width: 80%;
+  gap: 0.8rem;
+}
+
+.calc-quiz .answer input[type='range'] {
+  width: 100%;
+  background: linear-gradient(to right, rgb(84, 158, 14));
+  outline: none;
+}
+
+.button-containers {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  bottom: 20%;
+}
+
+.prev-button,
+.next-button {
+  width: 3.5rem;
+  height: 3rem;
+  justify-content: center;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-text);
+  cursor: pointer;
 }
