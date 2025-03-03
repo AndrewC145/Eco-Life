@@ -93,10 +93,14 @@ header {
   gap: 1rem;
 }
 
-.subheading h2 {
+.subheading p {
   font-size: 0.9rem;
   color: var(--secondary-text);
   text-transform: capitalize;
+}
+
+.calculator-text {
+  margin-bottom: 1rem;
 }
 
 .calculator-text h3 {
@@ -113,7 +117,6 @@ header {
   font-size: 1.2rem;
   color: var(--secondary-text);
   font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 .calc-quiz {
@@ -127,6 +130,7 @@ header {
   color: var(--secondary-text);
   font-size: 1.1rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .calc-quiz .answer {

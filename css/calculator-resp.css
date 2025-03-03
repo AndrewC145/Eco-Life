@@ -1,0 +1,186 @@
+@media screen and (max-width: 1440px) {
+  .footprint-img {
+    height: 480px;
+    width: 460px;
+  }
+
+  .footprint-text h2,
+  .calculator-text h3 {
+    font-size: 3rem;
+  }
+
+  .calculator-text {
+    margin-bottom: 2rem;
+  }
+
+  .prev-button,
+  .next-button {
+    width: 3.2rem;
+    height: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footprint-img {
+    width: 350px;
+    height: 400px;
+  }
+
+  .footprint-text {
+    width: 450px;
+  }
+
+  .footprint-text h2,
+  .calculator-text h3 {
+    font-size: 2.2rem;
+  }
+
+  .footprint-text p {
+    font-size: 1rem;
+  }
+
+  .calculator {
+    height: 500px;
+  }
+
+  .calc-quiz .question,
+  .calculator-text h4 {
+    font-size: 1rem;
+  }
+
+  .prev-button,
+  .next-button {
+    width: 2.8rem;
+    height: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footprint-info {
+    gap: 2.5rem;
+  }
+
+  .footprint-img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .footprint-text {
+    width: 350px;
+  }
+
+  .footprint-text h2,
+  .calculator-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .footprint-text h2 {
+    margin-bottom: 1rem;
+  }
+
+  .footprint-text p {
+    font-size: 0.8rem;
+  }
+
+  .calculator {
+    height: 450px;
+  }
+
+  .calc-left {
+    display: none;
+  }
+
+  .calc-right {
+    border-radius: 30px;
+    width: 70%;
+  }
+
+  .calculator-text h3 {
+    width: 100%;
+  }
+
+  .calc-quiz .question,
+  .calculator-text h4 {
+    font-size: 0.9rem;
+  }
+
+  .prev-button,
+  .next-button {
+    width: 2.4rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .footprint-info {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  .footprint-img {
+    width: 220px;
+    height: 250px;
+  }
+
+  .footprint-text {
+    width: 300px;
+  }
+
+  .footprint-text h2 {
+    text-align: center;
+  }
+
+  .footprint-text h2,
+  .calculator-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .footprint-text h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .footprint-text p {
+    font-size: 0.7rem;
+  }
+
+  .calculator {
+    height: 400px;
+  }
+
+  .calc-right {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .subheading p {
+    font-size: 0.7rem;
+  }
+
+  .calc-quiz .question,
+  .calculator-text h4 {
+    font-size: 0.8rem;
+  }
+
+  .calc-quiz .answer {
+    width: 100%;
+  }
+
+  .range-left,
+  .range-right {
+    font-size: 0.8rem;
+  }
+
+  .button-containers {
+    bottom: 15%;
+  }
+
+  .prev-button,
+  .next-button {
+    width: 2rem;
+    height: 1.8rem;
+  }
+}

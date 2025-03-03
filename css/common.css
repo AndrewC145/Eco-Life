@@ -363,6 +363,7 @@ footer .support-container {
   .menu-btn .menu-links {
     overflow-y: visible;
     gap: 0.7rem;
+    z-index: 1;
   }
 
   .menu-btn a {
