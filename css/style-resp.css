@@ -1,0 +1,108 @@
+@media screen and (max-width: 1440px) {
+    .title-container h1, .title-container h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .content-right img{
+        display: none;
+    }
+
+    .content-left img{
+        height: 90%;
+    }
+
+    #rotate{
+        display: none;
+    }
+
+    .habits-container {
+        grid-template-columns: 1fr; 
+    }
+    .habits-main{
+        padding-top: 0;
+    }
+    .habits-title h1 {
+        font-size: 2rem; 
+    }
+
+    .habit-tip {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .habit-tip h3, .habit-tip p {
+        min-width: 100%; 
+        text-align: center; 
+    }
+
+    .contact-btn{
+        display: none;
+    }
+    .calculator{
+        display: flex;
+    }
+    .footprint-img{
+        display: none;
+    }
+    .footprint-main h2{
+        font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+
+
+
+    .title-container h1, .title-container h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .content-right img{
+        display: none;
+    }
+
+    .content-left img{
+        height: 90%;
+    }
+
+    #rotate{
+        display: none;
+    }
+
+    .habits-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .habits-img{
+        display: none;
+    }
+
+    .habits-title h1 {
+        font-size: 2rem; 
+    }
+
+    .habit-tip {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .habit-tip h3, .habit-tip p {
+        min-width: 100%; 
+        text-align: center; 
+    }
+
+
+    .calculator{
+        display: flex;
+    }
+    .footprint-img{
+        display: none;
+    }
+    .footprint-main h2{
+        font-size: 1rem;
+    }
+
+
+  }
