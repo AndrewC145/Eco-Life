@@ -4,45 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
   </head>
   <body>
     <main>
+      <nav class="sidebar">
+          <img src="svg/logo.svg" alt="Eco-Life" />
+          <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+
+          <ul>
+            <li>
+              <img src="svg/dashboard-1_svgrepo.com.svg" alt="Dashboard" />
+              <a href="dashboard.html">Dashboard</a>
+            </li>
+            <li>
+              <img src="svg/home.svg" alt="Home" />
+              <a href="index.html" alt="home">Home</a>
+            </li>
+            <li>
+              <img src="svg/about.svg" alt="About" />
+              <a href="about.html" alt="about">About</a>
+            </li>
+            <li>
+              <img src="svg/goals_1_.svg" alt="Goals" />
+              <a href="goals.html" alt="goals">Goals</a>
+            </li>
+            <li>
+              <img src="svg/news_svgrepo.com.svg" alt="resources" />
+              <a href="education.html" alt="resources">Resources</a>
+            </li>
+            <li>
+              <img src="svg/phone.svg" alt="Contact" />
+              <a href="contact.html" alt="contact">Contact</a>
+            </li>
+          </ul>
+      </nav>
       <div class="container">
-        <nav class="sidebar">
-          <div class="logo">
-            <img src="svg/logo.svg" alt="Eco-Life" />
-          </div>
-          <div class="dashboard-links">
-            <ul>
-              <li>
-                <img src="svg/dashboard-1_svgrepo.com.svg" alt="Dashboard" />
-                <a href="dashboard.html">Dashboard</a>
-              </li>
-              <li>
-                <img src="svg/home.svg" alt="Home" />
-                <a href="index.html" alt="home">Home</a>
-              </li>
-              <li>
-                <img src="svg/about.svg" alt="About" />
-                <a href="about.html" alt="about">About</a>
-              </li>
-              <li>
-                <img src="svg/goals_1_.svg" alt="Goals" />
-                <a href="goals.html" alt="goals">Goals</a>
-              </li>
-              <li>
-                <img src="svg/news_svgrepo.com.svg" alt="resources" />
-                <a href="education.html" alt="resources">Resources</a>
-              </li>
-              <li>
-                <img src="svg/phone.svg" alt="Contact" />
-                <a href="contact.html" alt="contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
         <div class="main-grid">
           <div class="grid-header">
             <h1>Hello There!</h1>
@@ -56,7 +54,7 @@
               <h3>Current Rank</h3>
             </div>
             <div class="content-card">
-              <p>Guardian</p>
+              <h2>Guardian</h2>
               <p>7 more goals for next rank</p>
             </div>
           </div>
@@ -68,7 +66,7 @@
               <h3>Completed Goals</h3>
             </div>
             <div class="content-card">
-              <p>35 Goals Completed</p>
+              <h2>35 Goals Completed</h2>
             </div>
           </div>
           <div class="card">
@@ -79,7 +77,7 @@
               <h3>Current Streak</h3>
             </div>
             <div class="content-card">
-              <p>10 Habits</p>
+              <h2>10 Habits</h2>
             </div>
           </div>
           <div class="community-card">
@@ -110,6 +108,7 @@
           </div>
           <div class="fact-card">
             <h2>Fact Of The Day</h2>
+            <br>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
               numquam rem ratione voluptatum, iusto repellendus rerum
@@ -118,6 +117,7 @@
           </div>
           <div class="quote-card">
             <h2>Quote Of The Day</h2>
+            <br>
             <div class="text-container">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
