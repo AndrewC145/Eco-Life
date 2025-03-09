@@ -1,37 +1,34 @@
 @import url('common.css');
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
 }
 
-header{
-background: url('../images/goals-banner.jpg') lightgray 50% / cover no-repeat;
+header {
+  background: url('../images/goals-banner.jpg') lightgray 50% / cover no-repeat;
 }
-/* Header Styles */
 
-/* Goal Tracker Section */
 .goal-tracker {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 50%; 
- 
+  width: 50%;
+
   padding-bottom: 20%;
   background-color: rgb(255, 255, 255);
-  border-radius: 15px; /* Add border radius */
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
 }
 
-/* Input Container */
 .input-container {
   margin: auto;
-  width: 50%; /* Default width */
+  width: 50%;
   border-radius: 25px;
   padding: 10px;
   display: flex;
@@ -40,7 +37,7 @@ background: url('../images/goals-banner.jpg') lightgray 50% / cover no-repeat;
 }
 
 .input-container input {
-  width: 80%; /* Input field takes up most of the container */
+  width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -57,35 +54,30 @@ background: url('../images/goals-banner.jpg') lightgray 50% / cover no-repeat;
   height: 30px;
 }
 
-
-
-/* Main Heading */
 .main {
   margin: auto;
-  width: 50%; /* Default width */
+  width: 50%;
   border-radius: 25px;
   padding: 10px;
   text-align: center;
 }
 
-/* To-Do Container */
 .todo-container {
   margin: auto;
-  width: 50%; /* Default width */
+  width: 50%;
   height: 50px;
   border-radius: 25px;
   padding: 10px;
 }
 
 section {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color: green; /* Green background */
-    height: 700px; /* Height of the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  height: 700px;
 }
 
-/* Footer */
 .support-container {
   height: 140px;
 }
@@ -114,10 +106,9 @@ section {
   margin-bottom: 10px;
 }
 
-.the-list{
-    height: 50px;
-    width: 100px;
-    
+.the-list {
+  height: 50px;
+  width: 100px;
 }
 
 /* Media Queries for Responsiveness */
@@ -125,7 +116,7 @@ section {
 /* For devices with a max-width of 768px (tablets and small screens) */
 @media (max-width: 768px) {
   .goal-tracker {
-    width: 80%; /* Increase width for smaller screens */
+    width: 80%;
   }
 
   .input-container {
@@ -142,7 +133,8 @@ section {
     align-items: center;
   }
 
-  .footer-left, .footer-right {
+  .footer-left,
+  .footer-right {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -151,7 +143,7 @@ section {
 /* For devices with a max-width of 480px (mobile devices) */
 @media (max-width: 480px) {
   .goal-tracker {
-    width: 90%; /* Increase width for mobile */
+    width: 90%;
   }
 
   .input-container {
@@ -168,7 +160,8 @@ section {
     align-items: center;
   }
 
-  .footer-left, .footer-right {
+  .footer-left,
+  .footer-right {
     width: 100%;
   }
 
