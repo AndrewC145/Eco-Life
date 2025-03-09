@@ -1,182 +1,8 @@
 @import url('common.css');
 
-
 section {
     min-height: 1000px;
     background-color: rgb(112, 187, 82);
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background: url('../images/goals-banner.jpg') lightgray 50% / cover no-repeat;
-}
-
-.goal-tracker {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 50%;
-
-  padding-bottom: 20%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.input-container {
-  margin: auto;
-  width: 50%;
-  border-radius: 25px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.input-container input {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.input-container button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.input-container button img {
-  width: 30px; /* Icon size */
-  height: 30px;
-}
-
-.main {
-  margin: auto;
-  width: 50%;
-  border-radius: 25px;
-  padding: 10px;
-  text-align: center;
-}
-
-.todo-container {
-  margin: auto;
-  width: 50%;
-  height: 50px;
-  border-radius: 25px;
-  padding: 10px;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-  height: 700px;
-}
-
-.support-container {
-  height: 140px;
-}
-
-.footer-main {
-  height: 400px;
-  padding: 20px;
-  background-color: #f4f4f4;
-}
-
-.footer-info-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-left,
-.footer-right {
-  width: 48%;
-}
-
-.footer-logo img {
-  width: 120px;
-}
-
-.footer-info-container h4 {
-  margin-bottom: 10px;
-}
-
-.the-list {
-  height: 50px;
-  width: 100px;
-}
-
-
-
-
-@media (max-width: 768px) {
-  .goal-tracker {
-    width: 80%;
-  }
-
-  .input-container {
-    width: 80px;
-  }
-
-  .main,
-  .todo-container {
-    width: 80%;
-  }
-
-  .footer-info-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-left,
-  .footer-right {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .goal-tracker {
-    width: 90%;
-  }
-
-  .input-container {
-    width: 90%;
-  }
-
-  .main,
-  .todo-container {
-    width: 90%;
-  }
-
-  .footer-info-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-left,
-  .footer-right {
-    width: 100%;
-  }
-
-  header nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav ul {
->>>>>>> 55bdc552698cd6364b05407ffdf1281ad07ba52f
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,9 +21,9 @@ section {
 }
 
 .task-title p {
-    font-size: x-large;
     font-weight: bold;
     color: #3d3d3d;
+    font-size: xx-large;
 }
 
 .task-input {
@@ -217,16 +43,16 @@ section {
     flex: 1;
     font-size: 16px;
     font-weight: bold;
-    outline: none;
+ 
 }
 
 .task-input button {
     background: none;
     border: none;
     font-size: 20px;
-    cursor: pointer;
+ 
+    font-weight: bold;
     
-    transition: all 0.3s ease-in-out;
 }
 
 .task-list {
