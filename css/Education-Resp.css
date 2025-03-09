@@ -1,0 +1,184 @@
+@media screen and (max-width: 1440px) {
+  .tips-container {
+    max-width: 85%;
+    margin-top: 4%;
+  }
+
+  .articles {
+    margin-left: 15%;
+  }
+
+  .article {
+    width: 220px;
+  }
+
+  .article-title {
+    padding-left: 15%;
+  }
+
+  .page-title {
+    font-size: 6vw;
+    margin-left: 0;
+  }
+
+  .tips-left ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tips-left li {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tips-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+    margin-top: 3%;
+  }
+
+  .tips-left {
+    margin-left: 0;
+    padding-right: 0;
+    font-size: larger;
+  }
+
+  .articles {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .article {
+    width: 90%;
+  }
+
+  .article-title {
+    padding-left: 5%;
+    font-size: large;
+  }
+
+  .page-title {
+    font-size: 8vw;
+    margin-top: 3%;
+  }
+
+  .tips-left ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tips-left li {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tips-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .article-title {
+    font-size: medium;
+    padding-left: 0;
+  }
+
+  .articles {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .article {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .article-info p,
+  .article-info h3 {
+    font-size: small;
+  }
+
+  .page-title {
+    font-size: 10vw;
+    margin-bottom: 3%;
+  }
+
+  .tips-left ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tips-left li {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tips-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+  .info-container {
+    margin-left: 0;
+    margin-top: 10%;
+    max-width: 90%;
+  }
+
+  .info-container h1 {
+    font-size: medium;
+  }
+
+  .articles {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .article {
+    width: 100%;
+    margin-left: 0;
+    padding: 5%;
+  }
+
+  .article-info p,
+  .article-info h3 {
+    font-size: smaller;
+  }
+
+  .article-title {
+    font-size: large;
+  }
+
+  .tips-left {
+    margin-top: 10%;
+  }
+
+  .tips-left h1 {
+    margin-bottom: 15px;
+  }
+
+  .page-title {
+    font-size: 12vw;
+    margin-bottom: 20%;
+  }
+
+  .tips-left ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tips-left li {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}

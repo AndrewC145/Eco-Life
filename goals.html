@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goals</title>
     <link rel="stylesheet" href="css/goals.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/about-resp.css" />
+    <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"
+      rel="stylesheet" />
     
   
-  <style>
-    input, textarea{
-      background-color: rgba(8, 255, 8, 0.685);
-    }
+ 
 
    
   </style>
@@ -20,54 +25,128 @@
     <header class="goals-header">
       <nav>
         <div class="logo">
-          <img src="svg/logo.svg" alt="Eco-Life" />
+          <img src="svg/header-logo.svg" alt="Eco-Life" />
         </div>
-        <div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="education.html">Resources</a></li>
-          <li><a href="calculator.html">Calculator</a></li>
-          <li><a href="goals.html">Goals</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /> <a href="about.html">About</a>
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="dashboard.html"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="education.html"
+              >Resources</a
+            >
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="calculator.html"
+              >Calculator</a
+            >
+          </li>
+          <li>
+            <img src="svg/nav-bullet.svg" /><a href="goals.html">Goals</a>
+          </li>
         </ul>
-      </div>
         <div class="contact-btn">
           <a href="contact.html"
             >Get in Touch <img src="svg/arrow.svg" alt="arrow"
           /></a>
+        </div>
+        <div class="menu-btn">
+          <input type="checkbox" id="menu" />
+          <label for="menu" class="open-menu">
+            <img
+              src="svg/hamburger-menu-svgrepo-com.svg"
+              alt="menu"
+              style="height: 30px; width: 30px" />
+          </label>
+          <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="education.html">Resources</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="goals.html">Goals</a>
+            <a href="contact.html">Contact</a>
+          </div>
         </div>
       </nav>
       <div class="title-container">
         <h1>Goals</h1>
       </div>
     </header>
-    <section style="background-color: green; height: 700px;">
-
-      <div class="goal-tracker">
-        <h2 class="main">Sustainability Tracker</h2>
+   
 
 
-        <div class="input-container">
-          <input type="text" placeholder="Enter Your Goal: "/>
-          <button><img src="svg/plus.svg" /></button>
-        </div>
+<section class="the-section">
 
-        <div class="todo-container" style="height: 100px;">
+  <div class="list-container">
+
+    <div class="task-title">
+
+      <p>sustainability Tracker</p>
+    </div>
+
+    <div class="task-input">
+      <input type="text"  placeholder="Enter Goal">
+      <button class="add-button"><img src="svg/plus.svg"></button>
+    </div>
 
 
-          <ul class="the-list">
 
-            <li><input type="checkbox" />Task 1 <img src="svg/garbage-trash_svgrepo.com.svg" height="30" /></li>
-            <li><input type="checkbox" />Task 2 <img src="svg/garbage-trash_svgrepo.com.svg" height ="30" /></li>
-            <li><input type="checkbox" />Task 3 <img src="svg/garbage-trash_svgrepo.com.svg" height = "30"/></li>
-            <li><input type="checkbox" />Task 4 <img src="svg/garbage-trash_svgrepo.com.svg" height = "30" /></li>
+    <div class="the-list">
 
-          </ul>
+      <ul class="task-list">
 
-        </div>
-      </div>
+        <li class="task-item">
+            Task 1 
+            <button class="delete-btn">🗑️</button>
+        </li>
+        
+
+
+        <li class="task-item">
+            Task 2 
+            <button class="delete-btn">🗑️</button>
+        </li>
+        
+        <li class="task-item">
+            Task 3 
+            <button class="delete-btn">🗑️</button>
+        </li>
+        
+        <li class="task-item">
+            Task 4 
+            <button class="delete-btn">🗑️</button>
+        </li>
+        
+    </ul>
+
+
+
+    </div>
+
+
+
+
+   
+
+
+
+
+
+
+
+  </div>
+  
     </section>
+  
     <footer>
       <div class="support-container">
         <div class="support-text">
