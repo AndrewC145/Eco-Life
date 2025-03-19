@@ -6,30 +6,34 @@ const question = document.querySelector('.question');
 const rangeMin = document.querySelector('.range-left');
 const rangeMax = document.querySelector('.range-right');
 const type = document.querySelector('.type');
+const calcQuiz = document.querySelector('.calc-quiz');
+
+let count = 0;
+let score = 0;
+
+const quizCopy = calcQuiz.cloneNode(true);
 
 document.addEventListener('DOMContentLoaded', () => {
+  question.textContent = questions[count].question;
+  changeType();
   showRangeValue();
   prevButton.style.visibility = 'hidden';
 });
 
 function showRangeValue() {
   output.textContent = slider.value;
+  slider.min = questions[count].minVal;
+  slider.max = questions[count].maxVal;
+  rangeMin.textContent = questions[count].minVal;
+  rangeMax.textContent = questions[count].maxVal;
 }
 slider.addEventListener('input', showRangeValue);
-
-let count = 0;
 
 function showButtons() {
   if (count === 0) {
     prevButton.style.visibility = 'hidden';
   } else if (count > 0) {
     prevButton.style.visibility = 'visible';
-  }
-
-  if (count === questions.length - 1) {
-    nextButton.style.visibility = 'hidden';
-  } else {
-    nextButton.style.visibility = 'visible';
   }
 }
 
@@ -38,21 +42,30 @@ function changeType() {
     type.textContent = 'Transportation';
   } else if (count > 2 && count < 5) {
     type.textContent = 'Food';
-  } else {
+  } else if (count >= 5 && count <= 7) {
     type.textContent = 'Housing';
+  } else {
+    type.textContent = '';
+  }
+
+  if (count < questions.length) {
+    type.textContent += ` (${count + 1} / ${questions.length}) `;
   }
 }
 
-function changeValues() {}
-
 function moveNext() {
-  if (count < questions.length - 1) {
-    count++;
-    question.textContent = questions[count].question;
-    slider.value = questions[count].answer;
-    rangeMin.textContent = questions[count].minVal;
-    rangeMax.textContent = questions[count].maxVal;
+  count++;
+  if (count < questions.length) {
+    handleQuiz();
     showRangeValue();
+  } else if (count === questions.length) {
+    const buttonContainers = document.querySelector('.button-containers');
+    buttonContainers.style.display = 'none';
+    const restartBtn = document.createElement('button');
+    restartBtn.textContent = 'Restart Quiz';
+    restartBtn.classList.add('restart-button');
+    calcQuiz.appendChild(restartBtn);
+    restartBtn.addEventListener('click', restartQuiz);
   }
 
   changeType();
@@ -62,12 +75,31 @@ function moveNext() {
 function movePrev() {
   if (count > 0) {
     count--;
-    question.textContent = questions[count].question;
-    slider.value = questions[count].answer;
+    handleQuiz();
     showRangeValue();
   }
   changeType();
   showButtons();
+}
+
+function handleQuiz() {
+  question.textContent = questions[count].question;
+  slider.value = questions[count].answer;
+  slider.min = questions[count].minVal;
+  slider.max = questions[count].maxVal;
+  rangeMin.textContent = questions[count].minVal;
+  rangeMax.textContent = questions[count].maxVal;
+}
+
+function restartQuiz() {
+  count = 0;
+  handleQuiz();
+  changeType();
+  showRangeValue();
+  showButtons();
+  const buttonContainers = document.querySelector('.button-containers');
+  buttonContainers.style.display = 'flex';
+  calcQuiz.replaceWith(quizCopy.cloneNode(true));
 }
 
 prevButton.addEventListener('click', () => {
@@ -75,37 +107,39 @@ prevButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
-  console.log(count);
   moveNext();
 });
 
+function restartQuiz() {}
+
 const questions = [
   {
-    question: 'How many kilometers do you drive each week?',
+    question: 'How many kilometers do you drive each week? (in km)',
     minVal: 0,
     maxVal: 600,
     answer: slider.value,
   },
   {
-    question: 'How far do you take public transportation ',
+    question: 'How far do you take public transportation (in km)',
     minVal: 0,
     maxVal: 600,
     answer: slider.value,
   },
   {
-    question: 'How often do you carpool?',
+    question: 'How often do you carpool? (in %)',
     minVal: 0,
     maxVal: 100,
     answer: slider.value,
   },
   {
-    question: 'How often do you eat animal-based products?',
+    question: 'How often do you eat animal-based products? (in %)',
     minVal: 0,
     maxVal: 100,
     answer: slider.value,
   },
   {
-    question: 'What percentage of your food is locally sourced or organic?',
+    question:
+      'What percentage of your food is locally sourced or organic? (in %)',
     minVal: 0,
     maxVal: 100,
     answer: slider.value,
@@ -117,13 +151,13 @@ const questions = [
     answer: slider.value,
   },
   {
-    question: 'What is the size of your house?',
+    question: 'What is the size of your house? (in sqft)',
     minVal: 0,
     maxVal: 15000,
     answer: slider.value,
   },
   {
-    question: 'How energy efficient is your home?',
+    question: 'How energy efficient is your home? (in %)',
     minVal: 0,
     maxVal: 100,
     answer: slider.value,
