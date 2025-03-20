@@ -11,8 +11,6 @@ const calcQuiz = document.querySelector('.calc-quiz');
 let count = 0;
 let score = 0;
 
-const quizCopy = calcQuiz.cloneNode(true);
-
 document.addEventListener('DOMContentLoaded', () => {
   question.textContent = questions[count].question;
   changeType();
@@ -27,6 +25,7 @@ function showRangeValue() {
   rangeMin.textContent = questions[count].minVal;
   rangeMax.textContent = questions[count].maxVal;
 }
+
 slider.addEventListener('input', showRangeValue);
 
 function showButtons() {
@@ -35,6 +34,25 @@ function showButtons() {
   } else if (count > 0) {
     prevButton.style.visibility = 'visible';
   }
+
+  if (count === questions.length) {
+    const resetBtn = document.createElement('button');
+    resetBtn.textContent = 'Restart';
+    resetBtn.classList.add('reset-button');
+    calcQuiz.appendChild(resetBtn);
+    resetBtn.addEventListener('click', resetQuiz);
+  }
+}
+
+function resetQuiz() {
+  location.reload();
+}
+
+function showResults() {
+  let result = 'test';
+  let tips = 'test';
+  calcQuiz.innerHTML = `Your carbon footprint is ${result}!`;
+  calcQuiz.innerHTML += `<br> Ways to improve improve: ${tips}`;
 }
 
 function changeType() {
@@ -61,11 +79,7 @@ function moveNext() {
   } else if (count === questions.length) {
     const buttonContainers = document.querySelector('.button-containers');
     buttonContainers.style.display = 'none';
-    const restartBtn = document.createElement('button');
-    restartBtn.textContent = 'Restart Quiz';
-    restartBtn.classList.add('restart-button');
-    calcQuiz.appendChild(restartBtn);
-    restartBtn.addEventListener('click', restartQuiz);
+    showResults();
   }
 
   changeType();
@@ -91,17 +105,6 @@ function handleQuiz() {
   rangeMax.textContent = questions[count].maxVal;
 }
 
-function restartQuiz() {
-  count = 0;
-  handleQuiz();
-  changeType();
-  showRangeValue();
-  showButtons();
-  const buttonContainers = document.querySelector('.button-containers');
-  buttonContainers.style.display = 'flex';
-  calcQuiz.replaceWith(quizCopy.cloneNode(true));
-}
-
 prevButton.addEventListener('click', () => {
   movePrev();
 });
@@ -109,8 +112,6 @@ prevButton.addEventListener('click', () => {
 nextButton.addEventListener('click', () => {
   moveNext();
 });
-
-function restartQuiz() {}
 
 const questions = [
   {
