@@ -100,6 +100,7 @@
             <div class="inputs">
               <label for="name">
                 <input type="text" id="name" name="name" placeholder="Name" />
+                <div class="error"></div>
               </label>
               <label for="phone-number">
                 <input
@@ -107,6 +108,7 @@
                   name="phone-number"
                   id="phone-number"
                   placeholder="Phone Number" />
+                <div class="error"></div>
               </label>
               <label for="email-address">
                 <input
@@ -114,6 +116,7 @@
                   name="email-address"
                   id="email-address"
                   placeholder="Email Address" />
+                <div class="error"></div>
               </label>
               <label for="subject">
                 <input
@@ -121,9 +124,11 @@
                   name="subject"
                   id="subject"
                   placeholder="Subject" />
+                <div class="error"></div>
               </label>
               <label for="message">
                 <textarea id="message" maxlength="250"></textarea>
+                <div class="error"></div>
               </label>
               <button class="form-button">
                 Send Message
@@ -239,5 +244,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/form.js"></script>
   </body>
 </html>
